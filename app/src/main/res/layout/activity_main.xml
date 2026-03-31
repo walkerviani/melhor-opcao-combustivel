@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tituloText"
+        android:layout_width="412dp"
+        android:layout_height="85dp"
+        android:background="#F2C806"
+        android:gravity="center"
+        android:text="Verificador de melhor opção de combustível"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EtanolText"
+        android:layout_width="365dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/edit_text_view"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Digite o preço do etanol"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloText" />
+
+    <EditText
+        android:id="@+id/inputEtanol"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_edit_text"
+        android:ems="10"
+        android:hint="Digite aqui"
+        android:inputType="numberDecimal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/EtanolText"
+        app:layout_constraintStart_toStartOf="@+id/EtanolText"
+        app:layout_constraintTop_toBottomOf="@+id/EtanolText" />
+
+    <TextView
+        android:id="@+id/GasolinaText"
+        android:layout_width="365dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/edit_text_view"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Digite o preço da gasolina"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEtanol" />
+
+    <EditText
+        android:id="@+id/inputGasolina"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_edit_text"
+        android:ems="10"
+        android:hint="Digite aqui"
+        android:inputType="numberDecimal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/GasolinaText"
+        app:layout_constraintStart_toStartOf="@+id/GasolinaText"
+        app:layout_constraintTop_toBottomOf="@+id/GasolinaText" />
+
+    <Button
+        android:id="@+id/verificarBtn"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/yellow_button"
+        android:text="VERIFICAR"
+        android:textColor="#000000"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/painel" />
+
+    <TextView
+        android:id="@+id/painel"
+        android:layout_width="365dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/painel"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="105dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="Resultado:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/inputGasolina"
+        app:layout_constraintTop_toBottomOf="@+id/inputGasolina" />
+</androidx.constraintlayout.widget.ConstraintLayout>
